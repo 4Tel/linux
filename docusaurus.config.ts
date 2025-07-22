@@ -5,21 +5,22 @@ import { themes } from 'prism-react-renderer';
 import type { Navbar } from '@docusaurus/theme-common'
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
+import { gtag, redirects } from './config.config';
 
-const site_url = 'https://docu-rtd-template.readthedocs.io/';
+const site_url = 'https://4tel.github.io/';
 const author = '4Tel';
 const repo_from = 'https://github.com/'
-const repo_name = 'docu-rtd-template'
+const repo_name = 'linux'
 const repo_url = repo_from + author + '/' + repo_name
 
 /** Blog Information. */
 const meta: Config = {
   // site
   url: site_url,
-  baseUrl: '/',
+  baseUrl: '/' + repo_name,
   trailingSlash: false,
   // home
-  title: 'Docu-RTD Template',
+  title: 'Linux Docs',
   //favicon: 'img/favicon.ico',
   // locale  
   i18n: {
@@ -127,6 +128,7 @@ const page1: PresetConfig = [
 const config: Config = {
   ...meta,
   presets: [page1],
+  plugins: [gtag, redirects],
   markdown: {
     mermaid: true,
   },
