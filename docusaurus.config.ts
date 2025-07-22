@@ -33,7 +33,7 @@ const meta: Config = {
 
 /* Top Navigation bar information */
 const navigation: Navbar = {
-  title: author + '/' + repo_name,
+  title: author + ' / ' + repo_name,
   logo: {
     src: 'img/favicon.ico',
     href: site_url
