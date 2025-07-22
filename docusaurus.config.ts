@@ -57,7 +57,7 @@ const codeTheme = {
 
 /* Top Navigation bar information */
 const navigation: Navbar = {
-  title: '4Tel',
+  title: '4Tel' + repo_name,
   logo: {
     src: 'img/favicon.ico',
     href: 'https://4Tel.github.io'
