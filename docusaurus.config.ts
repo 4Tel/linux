@@ -60,6 +60,7 @@ const navigation: Navbar = {
   title: '4Tel',
   logo: {
     src: 'img/favicon.ico',
+    to: '/'
   },
   hideOnScroll: true,
   items: [
