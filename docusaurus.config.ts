@@ -21,7 +21,7 @@ const meta: Config = {
   trailingSlash: false,
   // home
   title: '4Tel',
-  //favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.ico',
   deploymentBranch: 'main',
   // locale  
   i18n: {
@@ -58,9 +58,9 @@ const codeTheme = {
 /* Top Navigation bar information */
 const navigation: Navbar = {
   title: '4Tel',
-  //logo: {
-  //  src: 'img/favicon.ico',
-  //},
+  logo: {
+    src: 'img/favicon.ico',
+  },
   hideOnScroll: true,
   items: [
     {
@@ -79,7 +79,7 @@ const navigation: Navbar = {
 
 /** theme setting */
 const theme: ThemeConfig = {
-  //image: 'img/favicon.ico', // tab
+  image: 'img/favicon.ico', // tab
   colorMode: {
     defaultMode: 'dark',
     disableSwitch: false,
