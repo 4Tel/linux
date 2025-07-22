@@ -20,7 +20,7 @@ const meta: Config = {
   baseUrl: '/' + repo_name,
   trailingSlash: false,
   // home
-  title: 'Linux Docs',
+  title: '4Tel',
   //favicon: 'img/favicon.ico',
   deploymentBranch: 'main',
   // locale  
@@ -57,7 +57,7 @@ const codeTheme = {
 
 /* Top Navigation bar information */
 const navigation: Navbar = {
-  title: 'Docu-RTD Template',
+  title: '4Tel',
   //logo: {
   //  src: 'img/favicon.ico',
   //},
