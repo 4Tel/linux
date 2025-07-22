@@ -22,6 +22,7 @@ const meta: Config = {
   // home
   title: 'Linux Docs',
   //favicon: 'img/favicon.ico',
+  deploymentBranch: 'main',
   // locale  
   i18n: {
     defaultLocale: 'kr',
