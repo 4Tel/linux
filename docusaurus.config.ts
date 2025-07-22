@@ -1,11 +1,10 @@
 import type * as Preset from '@docusaurus/preset-classic';
 import type { Config, PresetConfig, ThemeConfig } from '@docusaurus/types';
-import { themes } from 'prism-react-renderer';
 //
 import type { Navbar } from '@docusaurus/theme-common'
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
-import { gtag, redirects } from './config.config';
+import { codeTheme, gtag, redirects } from './config.config';
 
 const site_url = 'https://4tel.github.io/';
 const author = '4Tel';
@@ -20,7 +19,7 @@ const meta: Config = {
   baseUrl: '/' + repo_name,
   trailingSlash: false,
   // home
-  title: '4Tel',
+  title: author,
   favicon: 'img/favicon.ico',
   deploymentBranch: 'main',
   // locale  
@@ -32,32 +31,9 @@ const meta: Config = {
   onBrokenMarkdownLinks: 'throw',
 }
 
-const codeTheme = {
-  theme: themes.oneLight,
-  darkTheme: themes.oneDark,
-  magicComments: [
-    // Remember to extend the default highlight class name as well!
-    {
-      className: "theme-code-block-highlighted-line",
-      line: "highlight-next-line",
-      block: { start: "highlight-start", end: "highlight-end" },
-    },
-    {
-      className: "error-line",
-      line: "error-line",
-      block: { start: "error-start", end: "error-end" },
-    },
-    {
-      className: "warn-line",
-      line: "warn-line",
-      block: { start: "warn-start", end: "warn-end" },
-    },
-  ],
-}
-
 /* Top Navigation bar information */
 const navigation: Navbar = {
-  title: '4Tel/' + repo_name,
+  title: author + '/' + repo_name,
   logo: {
     src: 'img/favicon.ico',
     href: site_url
