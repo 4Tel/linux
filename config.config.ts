@@ -1,5 +1,8 @@
 import { themes } from 'prism-react-renderer';
 export const codeTheme = {
+  defaultLanguage: 'bash',
+  additionalLanguages: ["bash", "fortran", "python", "latex"],
+  //
   theme: themes.oneLight,
   darkTheme: themes.oneDark,
   magicComments: [
