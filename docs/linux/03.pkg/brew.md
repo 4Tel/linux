@@ -38,3 +38,7 @@ chmod -R go-w "$(brew --prefix)/share/zsh"
 ```sh
 brew install hello
 ```
+:::warning
+* 일부 환경에서는 package 및 의존성 설치가 안 될 수 있음.
+* `--force-bottle` 옵션을 통해 문제가 있는 각 package를 수동으로 강제 설치하여 부분적인 해결 가능.
+:::
