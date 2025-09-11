@@ -22,7 +22,11 @@ echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.bashrc
 * [참고](https://docs.brew.sh/Installation#alternative-installs)
 * homebrew 설치
 ```sh
-git clone https://github.com/Homebrew/brew homebrew
+mkdir homebrew && curl -L https://github.com/Homebrew/brew/tarball/main | tar xz --strip-components 1 -C homebrew
+```
+또는
+```sh
+mkdir homebrew && curl -L https://github.com/Homebrew/brew/tarball/main | tar xz --strip-components 1 -C homebrew
 ```
 * homebrew 설정
 ```sh
